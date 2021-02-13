@@ -1,0 +1,114 @@
+.configurador_conteiner,
+.configurador_titulo {
+  display: inline-block;
+}
+
+.configurador_conteiner {
+  margin-left: 1.4vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+.configurador_titulo {
+  font-family: 'Baumans-Regular';
+  font-weight: 500;
+  font-size: 48px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.6vw 0.4vw;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  box-shadow: 4px -5px 5px #999999;
+}
+
+.configurador_card {
+  display: inline-block;
+  font-family: 'Ubuntu-Light';
+  width: 96vw;
+  box-shadow: 4px -2px 5px #999999, 4px 2px 5px #999999;
+  margin-top: 0.1vw;
+  padding: 0.6vw 0.4vw;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.configurador_card__titulo {
+  display: inline-block;
+  font-size: 30px;
+  padding: 0.6vw 0.4vw;
+  margin-left: 0.8vw;
+  border-bottom: #6600ff 1px solid;
+}
+
+.configurador_card__opcao {
+  display: inline-block;
+  padding: 0.6vw 0.4vw;
+  background-color: #6600ff;
+  border-radius: 8px;
+  margin-left: 8px;
+  color: #ffffff;
+}
+
+.configurador_card__opcao:hover {
+  border-bottom: 3px solid #777777;
+  transition-property: all;
+  transition-delay: 2ms;
+  transition-duration: 450ms;
+  transition-timing-function: ease-in-out;
+}
+
+.configurador_card__input {
+  width: 98%;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  font-family: 'Ubuntu-Light';
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+.configurador_card__input___lista_cont {
+  width: 98%;
+  margin-left: 1.2vw;
+  background-color: #6600ff;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+.configurador_card__input___lista_titulo {
+  display: inline-block;
+  font-size: 22px;
+  padding: 0.6vw 0.4vw;
+  margin-left: 0.8vw;
+  border-bottom: #ffffff 1px solid;
+}
+
+.configurador_card__input___lista_resultados {
+  margin-bottom: 0.4vw;
+}
+
+.configurador_card__input___lista_resultados__item {
+  background-color: #8800ff;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 0.8vw;
+  width: 98%;
+  border-radius: 6.5px;
+  display: inline-block;
+  padding: 0.6vw 0vw;
+}
+
+.configurador_card__input___lista_resultados__item___componente____texto {
+  margin-left: 0.4vw;
+  font-size: 20px;
+}
+
+.configurador_card__input___lista_resultados__item___componente____texto,
+.configurador_card__input___lista_resultados__item___componente____botao {
+  display: inline-block;
+}
+
+.configurador_card__input___lista_resultados__item___componente____botao {
+  margin-left: 0.6vw;
+}

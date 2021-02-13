@@ -1,12 +1,13 @@
-.unote_slogan {
+.dpass_slogan {
   text-align: center;
   margin-bottom: 2vw;
   margin-top: 2vw;
 }
 
-.unote_text_slogan {
+.dpass_text_slogan {
   display: inline-block;
   font-size: 54px;
   font-family: "Ubuntu-Light";
   color: #454545;
 }
+ 

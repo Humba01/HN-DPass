@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/fonts.css"/>
     <link rel="stylesheet" href="css/pag-inicial/cabecalho.css"/>
     <link rel="stylesheet" href="css/pag-inicial/rodape.css"/>
-    <link rel="stylesheet" href="css/dpass/lists/lists.css"/>
     <link rel="stylesheet" href="css/dpass/slogan/slogan.css"/>
+    <link rel="stylesheet" href="css/dpass/configurador/configurador.css"/>
 
     <!-- endbuild -->
 
@@ -25,13 +25,121 @@
         <img src="svg/logo/new-logo/Humbanew Logo (Design) - 2.0 - 12º Gen - Preto.svg" alt="Humbanew Logo" class="logo_part_i"/>
         <div class="cab_conteiner_title">
           <h1 class="text1_title">Humbanew DPass</h1>
-        <!-- <p class="text2_title" id="beta_text">Beta</p> -->
         </div>
       </div>
     </header>
 
-    <section class="unote_slogan">
-      <p class="unote_text_slogan" id="slogan">O Gerador de senhas inteligente.</p>
+    <section class="dpass_slogan">
+      <p class="dpass_text_slogan" id="slogan">O Gerador de senhas inteligente.</p>
+    </section>
+
+    <section class="configurador_conteiner">
+      <h2 class="configurador_titulo">Configurações da Geração</h2>
+      <div class="configurador_card">
+        <p class="configurador_card__titulo">Tamanho da Senha:</p>
+
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_01" checked/>
+          <label for="tam_01">04 carac.</label>
+        </div>
+
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_02"/>
+          <label for="tam_02">05 carac.</label>
+        </div>
+        
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_03"/>
+          <label for="tam_03">06 carac.</label>
+        </div>
+        
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_04"/>
+          <label for="tam_04">07 carac.</label>
+        </div>
+        
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_05"/>
+          <label for="tam_05">08 carac.</label>
+        </div>
+        
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_06"/>
+          <label for="tam_06">09 carac.</label>
+        </div>
+        
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_07"/>
+          <label for="tam_07">10 carac.</label>
+        </div>
+        
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_08"/>
+          <label for="tam_08">11 carac.</label>
+        </div>
+        
+        <div class="configurador_card__opcao">
+          <input type="radio" name="tamanhoSenha" id="tam_09"/>
+          <label for="tam_09">12 carac.</label>
+        </div>
+     
+      </div>
+      <div class="configurador_card">
+        <p class="configurador_card__titulo">Caracteres Numéricos:</p>
+
+        <div class="configurador_card__opcao">
+          <input type="radio" name="caracteresNum" id="cat_n_01" checked/>
+          <label for="cat_n_01">Sim</label>
+        </div>
+
+        <div class="configurador_card__opcao">
+          <input type="radio" name="caracteresNum" id="cat_n_02"/>
+          <label for="cat_n_02">Não</label>
+        </div>
+
+      </div>
+      <div class="configurador_card">
+        <p class="configurador_card__titulo">Caracteres Comuns:</p>
+
+        <div class="configurador_card__opcao">
+          <input type="radio" name="caracteresCom" id="cat_c_01" checked/>
+          <label for="cat_c_01">Sim</label>
+        </div>
+
+        <div class="configurador_card__opcao">
+          <input type="radio" name="caracteresCom" id="cat_c_02"/>
+          <label for="cat_c_02">Não</label>
+        </div>
+
+      </div>
+      <div class="configurador_card">
+        <p class="configurador_card__titulo">Caracteres Especiais:</p>
+
+        <div class="configurador_card__opcao">
+          <input type="radio" name="caracteresEsp" id="cat_e_01" checked/>
+          <label for="cat_e_01">Sim</label>
+        </div>
+
+        <div class="configurador_card__opcao">
+          <input type="radio" name="caracteresEsp" id="cat_e_02"/>
+          <label for="cat_e_02">Não</label>
+        </div>
+
+      </div>
+      <div class="configurador_card">
+        <p class="configurador_card__titulo">Caracteres e/ou palavras necessárias:</p>
+        <input type="text" placeholder="Insira o valor aqui!" class="configurador_card__input"/>
+        <div class="configurador_card__input___lista_cont">
+          <p class="configurador_card__input___lista_titulo">Termos adicionados à geração da nova senha:</p>
+          <ol class="configurador_card__input___lista_resultados" id="inputResultados">
+            <!-- Local onde aparecerão os valores adicionados no input acima. -->
+            <li class="configurador_card__input___lista_resultados__item">
+              <p class="configurador_card__input___lista_resultados__item___componente____texto">Item adicionado.</p>
+              <p class="configurador_card__input___lista_resultados__item___componente____botao">✖</p>
+            </li>
+          </ol>
+        </div>
+      </div>
     </section>
 
   </body>
