@@ -46,7 +46,7 @@
   padding: 0.6vw 0.4vw;
   background-color: #6600ff;
   border-radius: 8px;
-  margin-left: 8px;
+  margin-left: 6px;
   color: #ffffff;
 }
 
@@ -58,57 +58,26 @@
   transition-timing-function: ease-in-out;
 }
 
-.configurador_card__input {
+.configurador_card__input_cont {
+  display: inline-block;
   width: 98%;
+  margin-left: 1.6vw;
   margin-top: 1vw;
-  margin-bottom: 1vw;
-  margin-left: 1vw;
-  font-family: 'Ubuntu-Light';
-  font-size: 20px;
-  border-radius: 7px;
 }
 
-.configurador_card__input___lista_cont {
-  width: 98%;
-  margin-left: 1.2vw;
+.configurador_card__input_cont___text {
+  font-family: 'Baumans-Regular';
+  width: 60%;
+  font-size: 24px;
+  border-radius: 6px;
+  background-color: #eeeeee;
+}
+
+.configurador_card__input_cont___submit {
+  font-family: 'Baumans-Regular';
+  width: 38%;
+  font-size: 24px;
+  border-radius: 6px;
   background-color: #6600ff;
   color: #ffffff;
-  border-radius: 6px;
-}
-
-.configurador_card__input___lista_titulo {
-  display: inline-block;
-  font-size: 22px;
-  padding: 0.6vw 0.4vw;
-  margin-left: 0.8vw;
-  border-bottom: #ffffff 1px solid;
-}
-
-.configurador_card__input___lista_resultados {
-  margin-bottom: 0.4vw;
-}
-
-.configurador_card__input___lista_resultados__item {
-  background-color: #8800ff;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-  margin-left: 0.8vw;
-  width: 98%;
-  border-radius: 6.5px;
-  display: inline-block;
-  padding: 0.6vw 0vw;
-}
-
-.configurador_card__input___lista_resultados__item___componente____texto {
-  margin-left: 0.4vw;
-  font-size: 20px;
-}
-
-.configurador_card__input___lista_resultados__item___componente____texto,
-.configurador_card__input___lista_resultados__item___componente____botao {
-  display: inline-block;
-}
-
-.configurador_card__input___lista_resultados__item___componente____botao {
-  margin-left: 0.6vw;
 }

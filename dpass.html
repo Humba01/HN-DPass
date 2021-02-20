@@ -127,19 +127,21 @@
 
       </div>
       <div class="configurador_card">
-        <p class="configurador_card__titulo">Caracteres e/ou palavras necessárias:</p>
-        <input type="text" placeholder="Insira o valor aqui!" class="configurador_card__input"/>
-        <div class="configurador_card__input___lista_cont">
-          <p class="configurador_card__input___lista_titulo">Termos adicionados à geração da nova senha:</p>
-          <ol class="configurador_card__input___lista_resultados" id="inputResultados">
-            <!-- Local onde aparecerão os valores adicionados no input acima. -->
-            <li class="configurador_card__input___lista_resultados__item">
-              <p class="configurador_card__input___lista_resultados__item___componente____texto">Item adicionado.</p>
-              <p class="configurador_card__input___lista_resultados__item___componente____botao">✖</p>
-            </li>
+        <p class="configurador_card__titulo">Expressões ou termos que deseje colocar na senha final:</p>
+          
+          <div class="configurador_card__input_cont">
+            <input class="configurador_card__input_cont___text" type="text" placeholder="Insira o valor desejado aqui!" id="inp_1" />
+            <input class="configurador_card__input_cont___submit" type="submit" id="inp_s_1" />
+          </div>
 
-          </ol>
+      </div>
+      <div class="configurador_card">
+        <p class="configurador_card__titulo">Senha Gerada:</p>
+      
+        <div class="configurador_card__resultado_cont">
+          <p class="configurador_card__resultado_cont___display" id="disp_1"></p>
         </div>
+      
       </div>
     </section>
 
