@@ -58,7 +58,7 @@
   transition-timing-function: ease-in-out;
 }
 
-.configurador_card__input_cont {
+.configurador_card__input_cont, .configurador_card__resultado_cont {
   display: inline-block;
   width: 98%;
   margin-left: 1.6vw;
@@ -80,4 +80,16 @@
   border-radius: 6px;
   background-color: #6600ff;
   color: #ffffff;
+}
+
+.configurador_card__resultado_cont___display {
+  font-family: 'Ubuntu-Light-Italic';
+  font-size: 34px;
+  display: inline-block;
+  background-color: #6600ff;
+  border-radius: 8px;
+  text-align: center;
+  color: #00ff00;
+  padding: 0.8vw 1.1vw;
+  font-weight: 700;
 }

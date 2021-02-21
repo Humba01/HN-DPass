@@ -1,3 +1,5 @@
+// event.key -> propriedade para pegar a entrada do teclado.
+
 // Lista de resultados do input
 const listaTermosAdicionados = document.getElementById('inputResultados');
 
@@ -26,41 +28,16 @@ const caracComuns2 = document.getElementById('cat_c_02');
 const caracEspeciais1 = document.getElementById('cat_e_01');
 const caracEspeciais2 = document.getElementById('cat_e_02');
 
-function criaItemDaLista() {
-  const itemLista = document.createElement("li");
-  itemLista.classList.add("configurador_card__input___lista_resultados__item");
-  listaTermosAdicionados.appendChild(itemLista);
+//Entrada do Usuário
+const inputValores = document.getElementById('inp_1');
+const inputValoresSubmit = document.getElementById('inp_s_1');
 
-  const itemComponentTexto = document.createElement("p");
-  itemComponentTexto.classList.add("configurador_card__input___lista_resultados__item___componente____texto");
-  itemLista.appendChild(itemComponentTexto);
-  
-  const itemComponentBotao = document.createElement("p");
-  itemComponentBotao.classList.add("configurador_card__input___lista_resultados__item___componente____botao");
-  itemComponentBotao.textContent = "✖";
-  itemLista.appendChild(itemComponentBotao);
+//Mostragem da Entrada do Usuário
+const inputValoresSubmitMostragem = document.getElementById('inp_c_m_1');
 
-  deletaItemDaLista(itemComponentBotao, itemLista);
+//Resultado
+const quadroDoResultado = document.getElementById('disp_1');
 
-  return itemComponentTexto;
-}
-
-function deletaItemDaLista(componenteBotao=HTMLElement, componentItemLista=HTMLElement) {
-  return componenteBotao.addEventListener("click", function() {
-    listaTermosAdicionados.removeChild(componentItemLista);
-  });
-}
-
-function pegaDadosInput() {
-  document.addEventListener('keypress', function() {
-    
-    let entrada = event.key;
-    
-    if (entrada == "Enter") {
-      criaItemDaLista();
-      itemComponentTexto.textContent = inputValores;
-    }
-  });
-}
-
-pegaDadosInput();
+function _montaNovaSenha() {}
+function adicionaItemAListaDeValores() {}
+function excluaItemDaListaDeValores() {}
