@@ -1,8 +1,5 @@
 // event.key -> propriedade para pegar a entrada do teclado.
 
-// Lista de resultados do input
-const listaTermosAdicionados = document.getElementById('inputResultados');
-
 // Componentes que devem ser verificados e coletados seus dados
 
 // Tamanho da Senha
@@ -30,7 +27,6 @@ const caracEspeciais2 = document.getElementById('cat_e_02');
 
 //Entrada do Usuário
 const inputValores = document.getElementById('inp_1');
-const inputValoresSubmit = document.getElementById('inp_s_1');
 
 //Mostragem da Entrada do Usuário
 const inputValoresSubmitMostragem = document.getElementById('inp_c_m_1');
@@ -38,6 +34,53 @@ const inputValoresSubmitMostragem = document.getElementById('inp_c_m_1');
 //Resultado
 const quadroDoResultado = document.getElementById('disp_1');
 
+var fb = 0;
+var values = {itemTexto: []};
+
+function adicionaItemAListaDeValores() {
+  
+  let novoItem = document.createElement('li');
+  novoItem.classList.add("configurador_card__input_cont_most___lista____item");
+  
+  let novoItemTexto = document.createElement('p');
+  novoItemTexto.classList.add("configurador_card__input_cont_most___lista____item_texto");
+  novoItemTexto.id = `btn_${fb}`;
+  
+  let novoItemBotao = document.createElement('button');
+  novoItemBotao.classList.add("configurador_card__input_cont_most___lista____item_botao");
+  novoItemBotao.textContent = "✖";
+
+  verificaEntrada(novoItem, novoItemTexto, novoItemBotao);
+  
+  novoItemBotao.addEventListener('click', function() {
+    for(let r = 0; r < values.itemTexto.length; r++) {
+      if(values.itemTexto[r] == novoItemTexto.textContent) {
+        values.itemTexto.slice(r, r+1);
+      }
+    }
+    inputValoresSubmitMostragem.removeChild(novoItem);
+    console.log(values.itemTexto);
+  });
+}
+
+function verificaEntrada(novoItem=HTMLLIElement, novoItemTexto=HTMLParagraphElement, novoItemBotao=HTMLButtonElement) {
+  if(event.key == "Enter") {
+    novoItemTexto.textContent = inputValores.value;
+    novoItem.appendChild(novoItemTexto);
+    novoItem.appendChild(novoItemBotao);
+    inputValoresSubmitMostragem.appendChild(novoItem);
+    fb++;
+
+    let novosAtributos = new Object({"attr": novoItemTexto.textContent});
+    console.log(novosAtributos);
+    values.itemTexto.push(novosAtributos);
+    console.log(values);
+  }
+}
+
+inputValores.addEventListener('keydown', function() {
+  adicionaItemAListaDeValores();
+});
+
 function _montaNovaSenha() {}
-function adicionaItemAListaDeValores() {}
-function excluaItemDaListaDeValores() {}
+function mostraNovaSenha() {}
