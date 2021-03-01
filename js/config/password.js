@@ -53,11 +53,6 @@ function adicionaItemAListaDeValores() {
   verificaEntrada(novoItem, novoItemTexto, novoItemBotao);
   
   novoItemBotao.addEventListener('click', function() {
-    for(let r = 0; r < values.itemTexto.length; r++) {
-      if(values.itemTexto[r] == novoItemTexto.textContent) {
-        values.itemTexto.slice(r, r+1);
-      }
-    }
     inputValoresSubmitMostragem.removeChild(novoItem);
     console.log(values.itemTexto);
   });
@@ -81,6 +76,8 @@ function verificaEntrada(novoItem=HTMLLIElement, novoItemTexto=HTMLParagraphElem
 inputValores.addEventListener('keydown', function() {
   adicionaItemAListaDeValores();
 });
+
+function criaExpressaoRegularItemDaLista() {}
 
 function _montaNovaSenha() {}
 function mostraNovaSenha() {}
